@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker : All in one Color Code</title>
+
+    <!-- One of the following themes -->
+    <link rel="stylesheet" href="lib/themes/classic.min.css" />
+    <!-- 'classic' theme -->
+
+    <!-- custom style  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <h1 class="h1">Color Picker </h1>
+            <h3 class="h3"><strong>A professional's choice</strong></h3>
+        </div>
+
+    </header>
+    <section class="main_container">
+        <div class="container">
+            <div class="container_item ">
+                <div class="color_code">
+                    <p>RGB</p>
+                    <input type="text" class="color_value" id="rgb">
+                </div>
+                <div class="color_code">
+                    <p>RGBA</p>
+                    <input type="text" class="color_value" id="rgba">
+                </div>
+                <div class="color_code">
+                    <p>hex</p>
+                    <input type="text" class="color_value" id="hex">
+                </div>
+                <div class="color_code">
+                    <p>hsla</p>
+                    <input type="text" class="color_value" id="hsla">
+                </div>
+                <div class="color_code">
+                    <p>hsva</p>
+                    <input type="text" class="color_value" id="hsva">
+                </div>
+                <div class="color_code">
+                    <p>cmyk</p>
+                    <input type="text" class="color_value" id="cmyk">
+                </div>
+            </div>
+            <div class="container_item">
+                <h1 class="h_text change_color"> This is Sample h1.</h1>
+                <h2 class="bg_text change_bg">This is sample h2.</h2>
+                <p class="h_text change_color"> This is Sample paragraph.</p>
+                <p class="bg_text change_bg"> This is Sample paragraph.</p>
+                <span class="bg_color change_bg"></span>
+                <div class="border "></div>
+            </div>
+
+        </div>
+
+        <div class="color_picker_container">
+            <h3 class="color_select_h3">Create Your Color for professional designing. </h3>
+
+            <div class="color_selection">
+                <strong>Pick Color  </strong>
+                <div class="color-picker"> </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- html 5 color picker  -->
+    <div class="colorPicker_html5">
+        <div class="color_picker_container">
+           <label >HTML 5 color picker </label>
+           <input type="color"  id="html5_color">
+        </div>
+
+        <div class="color_picker_container">
+            <div class="color_code">
+                <p>RGB</p>
+                <input type="text" class="color_value" id="html5_rgb">
+            </div>
+            <div class="color_code">
+                <p>HEX</p>
+                <input type="text" class="color_value" id="html5_hex">
+            </div>
+
+        </div>
+    </div>
+
+    <section class="contact main_container"> 
+        <h1 class="contact_heading">Connect with us</h1>
+        <div class="social_links">
+
+            <div>
+                <a href="https://www.youtube.com/channel/UCAPO89mhJ_yg5ygnj0v09Ew" target="blank"><img src="img/yt.png" alt="" srcset=""></a>   
+                <strong>Youtube</strong> 
+            </div>
+            <div>
+                <a href="https://facebook.com/panditprogrammer" target="blank"><img src="img/fb.png" alt="" srcset=""></a>   
+                <strong>Facebook</strong> 
+            </div>
+            <div>
+                <a href="https://Instagram.com/panditprogrammer" target="blank"><img src="img/instagram.jpeg" alt="" srcset="">
+                </a>
+                <strong>Instagram</strong>
+            </div>
+            <div>
+                <a href="https://Github.com/panditprogrammer" target="blank">
+                    <img src="img/GitHub-Mark.png" alt="" srcset="">
+                </a>
+                <strong>Github</strong>
+            </div>
+            <div>
+                <a href="https://twitter.com/panditprogramer" target="blank">
+                    <img src="img/twitter .png" alt="" srcset="">
+                </a>
+                <strong>Twitter</strong>
+                
+            </div>
+        </div>
+
+    </section>
+
+<footer>
+    <div>
+        <p>All rights Reversed by PanditProgrammer.com <br> Designed by PanditProgrammer,</p>
+    </div>
+</footer>
+    <!-- Modern or es5 bundle -->
+    <script src="lib/pickr.min.js"></script>
+    <script src="lib/pickr.es5.min.js"></script>
+    <script src="main.js">
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+:root{
+    --main_color: rgb(31, 79, 121);
+    --white_color: #fdfdfd;
+    --h1_color: #dbdada;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    min-width: 880px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.945);
+}
+
+.h1{
+    font-family: Verdana, sans-serif;
+    font-size: 45px;
+    font-style: oblique;
+    text-transform: capitalize;
+    color: var(--h1_color);
+    
+}
+
+.h3{
+    font-family: monospace;
+    font-size: 23px;
+    font-style: italic;
+    text-transform: capitalize;
+
+}
+
+h4{
+    font-size: 20px;
+    margin: 10px;
+}
+
+/* top header  */
+.header{
+    width: 100%;
+    height: 100px;
+    margin: auto;
+    padding: 5px 20px;
+    background: var(--main_color);
+}
+
+.main_container{
+    width: 960px;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.container{
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    float: right;
+    height: auto;
+    border-radius: 10px;
+    background-color: var(--white_color);
+    box-shadow: 0px 5px 20px 10px rgb(238, 238, 238);
+
+}
+
+.color_picker_container{
+    width: 400px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: var(--white_color);
+    box-shadow: 0px 5px 15px 5px rgb(238, 238, 238);
+}
+
+/* main color picker button  */
+.picker{
+    width: 960px;
+    float: left
+}
+
+.container .container_item{
+    width: 360px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+/* color checking for heading and paragraph  for preview*/
+.container .container_item .h_text{
+    width: 80%;
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 5px 20px;
+    
+}
+/* color checking for background color for preview */
+.container .container_item .bg_color{
+    width: 80%;
+    height: 15px;
+    margin: 0px 20px;
+    background-color: black;
+    
+}
+
+/* color checking for border for preview */
+.container .container_item .border{
+    width: 80%;
+    height: 10px;
+    margin: 5px auto;
+    margin-left: 20px;
+    border: 2px solid black;
+
+}
+
+.container .container_item .bg_text{
+    font-size: 1.2rem;
+    margin: 5px 20px;
+
+}
+
+/* left side for container  */
+.color_code{
+    width: 360px;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.color_code p{
+    width: 100px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--main_color);
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 50px;
+    user-select: none;
+
+}
+
+.color_code .color_value{
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 4px;
+
+}
+
+.color_select_h3{
+   margin: 5px;
+   padding-left: 10px;
+    font-weight: bolder;
+    font-size: 30px;
+    color: var(--main_color);
+}
+
+.color_selection{
+    width: 400px;
+    margin-top: 20px;
+
+}
+
+
+.color_selection strong{
+    font-size: 16px;
+    font-family: fantasy;
+    padding: 10px ;
+
+}
+
+.pickr .pcr-button{
+    width: 380px !important;
+    height: 50px !important;
+    padding: 5px !important;
+    margin: 10px !important;
+}
+
+
+/* html 5 color picker section  */
+.colorPicker_html5{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+/* html5 color picker  */
+.colorPicker_html5 .color_picker_container{
+    width: 400px;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+/* html 5 color picker input  */
+.color_picker_container #html5_hex,#html5_rgb{
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 4px;
+
+}
+
+/* input type color  */
+.colorPicker_html5 .color_picker_container input{
+    width: 360px;
+    height: 30px;
+    
+}
+/* label for input type color  */
+.colorPicker_html5 .color_picker_container label{
+    font-size: 20px;
+    padding: 10px;
+}
+
+#html5_color:hover{
+    cursor: pointer;
+}
+
+
+/* contact section  */
+.contact{
+    display: flex;
+    margin: 20px auto;
+    flex-direction: column;
+}
+.contact h1{
+    text-align: center;
+    padding: 15px;
+    text-transform: capitalize;
+}
+
+.contact .social_links{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contact .social_links div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    transition:  all ease-in-out 0.5s;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 15px whitesmoke;
+}
+
+.contact .social_links div:hover{
+    transform: scale(1.05);
+}
+
+.contact .social_links a img{
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+/* footer section style here  */
+footer div{
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--main_color);
+    color: var(--h1_color);
+}
